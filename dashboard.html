@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/styles.css" />
+  </head>
+  <body class="body">
+    <!-- The modal -->
+    <div id="modal" class=""></div>
+
+    <nav class="px-10 py-5 border relative z-0">
+      <div class="text-4xl text-gray-800 font-bold">TimeTable</div>
+    </nav>
+
+    <div class="absolute flex justify-center items-center w-full inset-0 z-0">
+      <img src="./images/oko-logo.png" alt="oko-logo" class="w-64 h-64 relative z-10 opacity-25" />
+    </div>
+
+    <div class="px-10 pt-10 grid grid-cols-12 space-x-2 relative">
+      <div class="col-span-1 border text-center py-2 font-bold">Time</div>
+      <div class="col-span-1 border text-center py-2 font-bold">Dept</div>
+      <div class="grid grid-cols-5 col-span-10 w-full">
+        <div class="border font-bold text-center py-2">Monday</div>
+        <div class="border font-bold text-center py-2">Tuesday</div>
+        <div class="border font-bold text-center py-2">Wednesday</div>
+        <div class="border font-bold text-center py-2">Thursday</div>
+        <div class="border font-bold text-center py-2">Friday</div>
+      </div>
+    </div>
+
+    <div id="wrapper" class="relative"></div>
+
+    <div class="mt-32 flex justify-center items-center relative">
+      <button id="new-schedule-btn" class="bg-blue-600 text-white px-8 py-3">
+        Add a Course Schedule
+      </button>
+    </div>
+
+    <!-- script -->
+    <script src="js/storage.js"></script>
+    <script src="js/ui.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
